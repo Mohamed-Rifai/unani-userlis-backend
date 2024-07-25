@@ -5,6 +5,7 @@ import dotenv from 'dotenv'
 
 
 import authRouter from './routes/authRouter'
+import patientRouter from './routes/patientRouter'
 import connectDb from './connections/database'
 
 const app = express();
@@ -40,6 +41,7 @@ connectDb()
 
 
 app.use('/api/user',authRouter)
+app.use('/api/patient',patientRouter)
 
 
 
