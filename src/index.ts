@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors'
+import dotenv from 'dotenv'
 
 
 
@@ -7,6 +8,10 @@ import authRouter from './routes/authRouter'
 import connectDb from './connections/database'
 
 const app = express();
+dotenv.config()
+
+
+
 
 const port = process.env.PORT || 5000;
 // CORS configuration
@@ -35,6 +40,7 @@ connectDb()
 
 
 app.use('/api/user',authRouter)
+
 
 
 app.listen(port, () => {
