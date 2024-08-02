@@ -7,7 +7,7 @@ import User from '../models/user'
 
 
 
-const authenticateUser = (req: Request, res: Response) => {
+ const authenticateUser = (req: Request, res: Response) => {
 
       const {email,password}= req.body
 
@@ -83,13 +83,13 @@ const authenticateUser = (req: Request, res: Response) => {
     }
           
     
+    }
 
 
-};
 
 const logoutUser = (req: Request, res: Response) => {
 
 
 };
 
-export { authenticateUser, logoutUser };
+export { authenticateUser, logoutUser }
