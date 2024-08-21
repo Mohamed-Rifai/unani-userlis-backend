@@ -12,7 +12,7 @@ import connectDb from './connections/database'
 const app = express();
 
 
-const allowedOrigins = ['http://localhost:3000', 'https://main--charming-cannoli-935784.netlify.app','https://charming-cannoli-935784.netlify.app'];
+const allowedOrigins = ['http://localhost:3000', 'https://main--charming-cannoli-935784.netlify.app','https://charming-cannoli-935784.netlify.app','https://ahsani313.in'];
 
 //Create the CORS options function
 const corsOptions = ( req:CorsRequest, callback:(err:Error | null,options ?:CorsOptions)=> void)=>  {
